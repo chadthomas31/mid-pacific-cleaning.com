@@ -1,0 +1,21 @@
+{
+  "name": "Mid Pacific Cleaning",
+  "short_name": "Mid Pacific Cleaning",
+  "description": "Extraordinary cleaning services in Maui, Hawaii. Professional, reliable, and eco-friendly cleaning solutions for your home and business.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f766e",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
