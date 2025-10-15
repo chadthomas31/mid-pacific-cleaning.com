@@ -20,24 +20,23 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
-        <div className="flex flex-col lg:flex-row items-center justify-between">
-          {/* Logo - Offset to the left */}
-          <div className={`mb-8 lg:mb-0 lg:mr-12 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+        <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-start">
+          {/* Logo and Title - Side by side */}
+          <div className={`flex items-center mb-8 lg:mb-0 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <img 
               src="/logo.png" 
               alt="Mid Pacific Cleaning Logo" 
-              className="h-40 w-40 md:h-56 md:w-56 lg:h-64 lg:w-64 drop-shadow-2xl"
+              className="h-32 w-32 md:h-40 md:w-40 lg:h-48 lg:w-48 drop-shadow-2xl mr-6"
             />
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+              Mid-Pacific Cleaning
+            </h1>
           </div>
           
           {/* Main Content */}
-          <div className="text-center lg:text-left flex-1">
-            {/* Main Heading */}
+          <div className="text-center lg:text-left flex-1 lg:ml-12">
+            {/* Subtitle */}
             <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-              <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-                Mid Pacific
-                <span className="block text-maui-sand">Cleaning</span>
-              </h1>
               <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto lg:mx-0">
                 Extraordinary cleaning services by Kate McCluskey & Darci Gonzalves
               </p>
@@ -49,12 +48,18 @@ export default function Hero() {
             {/* CTA Buttons */}
             <div className={`transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
-                <button className="btn-primary text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200">
+                <a 
+                  href="/quote"
+                  className="btn-primary text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
+                >
                   Get Free Quote
-                </button>
-                <button className="btn-secondary text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200">
+                </a>
+                <a 
+                  href="/services"
+                  className="btn-secondary text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
+                >
                   View Services
-                </button>
+                </a>
               </div>
             </div>
 

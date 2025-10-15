@@ -11,6 +11,20 @@ const services = [
     color: 'from-blue-500 to-cyan-500'
   },
   {
+    title: 'Home Organization',
+    description: 'Professional organization services to declutter and optimize your space.',
+    features: ['Closet organization', 'Kitchen organization', 'Home office setup', 'Garage organization'],
+    icon: '📦',
+    color: 'from-purple-500 to-pink-500'
+  },
+  {
+    title: 'Vacation Rental Cleaning',
+    description: 'Specialized cleaning for vacation rentals with quick turnaround times.',
+    features: ['Same-day turnover cleaning', 'Linen and towel service', 'Inventory management', 'Guest-ready standards'],
+    icon: '🏖️',
+    color: 'from-orange-500 to-yellow-500'
+  },
+  {
     title: 'Commercial Cleaning',
     description: 'Professional office and business cleaning to maintain a pristine workspace.',
     features: ['Office cleaning', 'Retail space cleaning', 'Medical facility cleaning', 'Restaurant cleaning'],
@@ -29,7 +43,7 @@ const services = [
     description: 'Custom cleaning solutions for unique situations and special events.',
     features: ['Event cleanup', 'Holiday preparation', 'Window cleaning', 'Carpet & upholstery'],
     icon: '✨',
-    color: 'from-purple-500 to-pink-500'
+    color: 'from-indigo-500 to-purple-500'
   }
 ]
 
@@ -50,7 +64,7 @@ export default function Services() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {services.map((service, index) => (
             <div
               key={index}
