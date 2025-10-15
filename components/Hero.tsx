@@ -20,56 +20,59 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
-        <div className="text-center">
-          {/* Logo */}
-          <div className={`mb-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+        <div className="flex flex-col lg:flex-row items-center justify-between">
+          {/* Logo - Offset to the left */}
+          <div className={`mb-8 lg:mb-0 lg:mr-12 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <img 
               src="/logo.png" 
               alt="Mid Pacific Cleaning Logo" 
-              className="h-32 w-32 md:h-48 md:w-48 mx-auto drop-shadow-lg"
+              className="h-40 w-40 md:h-56 md:w-56 lg:h-64 lg:w-64 drop-shadow-2xl"
             />
           </div>
           
-          {/* Main Heading */}
-          <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-              Mid Pacific
-              <span className="block text-maui-sand">Cleaning</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
-              Extraordinary cleaning services by Kate McCluskey & Darci Gonzalves
-            </p>
-            <p className="text-lg text-white/80 mb-12 max-w-2xl mx-auto">
-              Serving Maui, Hawaii with professional, eco-friendly cleaning solutions for your home and business
-            </p>
-          </div>
-
-          {/* CTA Buttons */}
-          <div className={`transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <button className="btn-primary text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200">
-                Get Free Quote
-              </button>
-              <button className="btn-secondary text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200">
-                View Services
-              </button>
+          {/* Main Content */}
+          <div className="text-center lg:text-left flex-1">
+            {/* Main Heading */}
+            <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+              <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                Mid Pacific
+                <span className="block text-maui-sand">Cleaning</span>
+              </h1>
+              <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto lg:mx-0">
+                Extraordinary cleaning services by Kate McCluskey & Darci Gonzalves
+              </p>
+              <p className="text-lg text-white/80 mb-12 max-w-2xl mx-auto lg:mx-0">
+                Serving Maui, Hawaii with professional, eco-friendly cleaning solutions for your home and business
+              </p>
             </div>
-          </div>
 
-          {/* Trust Indicators */}
-          <div className={`mt-16 transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-white mb-2">5+</div>
-                <div className="text-white/80">Years Experience</div>
+            {/* CTA Buttons */}
+            <div className={`transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
+                <button className="btn-primary text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200">
+                  Get Free Quote
+                </button>
+                <button className="btn-secondary text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200">
+                  View Services
+                </button>
               </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-white mb-2">100%</div>
-                <div className="text-white/80">Eco-Friendly</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-white mb-2">24/7</div>
-                <div className="text-white/80">Customer Support</div>
+            </div>
+
+            {/* Trust Indicators */}
+            <div className={`mt-16 transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto lg:mx-0">
+                <div className="text-center lg:text-left">
+                  <div className="text-3xl font-bold text-white mb-2">5+</div>
+                  <div className="text-white/80">Years Experience</div>
+                </div>
+                <div className="text-center lg:text-left">
+                  <div className="text-3xl font-bold text-white mb-2">100%</div>
+                  <div className="text-white/80">Eco-Friendly</div>
+                </div>
+                <div className="text-center lg:text-left">
+                  <div className="text-3xl font-bold text-white mb-2">24/7</div>
+                  <div className="text-white/80">Customer Support</div>
+                </div>
               </div>
             </div>
           </div>
