@@ -5,6 +5,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://mid-pacific-cleaning.com'),
   title: 'Mid Pacific Cleaning - Kate McCluskey & Darci Gonzalves',
   description: 'Extraordinary cleaning services in Maui, Hawaii. Professional, reliable, and eco-friendly cleaning solutions for your home and business.',
   keywords: 'cleaning services, Maui, Hawaii, professional cleaning, eco-friendly, residential cleaning, commercial cleaning',
