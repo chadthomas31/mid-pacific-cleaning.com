@@ -26,7 +26,7 @@ export default function Hero() {
             <img 
               src="/logo.png" 
               alt="Mid Pacific Cleaning Logo" 
-              className="h-24 w-24 md:h-32 md:w-32 mx-auto drop-shadow-lg"
+              className="h-32 w-32 md:h-48 md:w-48 mx-auto drop-shadow-lg"
             />
           </div>
           
