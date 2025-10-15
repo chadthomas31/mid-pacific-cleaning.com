@@ -1,12 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  trailingSlash: true,
   images: {
     unoptimized: true
   },
-  experimental: {
-    appDir: true
+  distDir: '.next',
+  generateBuildId: async () => {
+    return 'build-' + Date.now()
   }
 }
 
