@@ -2,10 +2,6 @@
 const nextConfig = {
   images: {
     unoptimized: true
-  },
-  distDir: '.next',
-  generateBuildId: async () => {
-    return 'build-' + Date.now()
   }
 }
 
