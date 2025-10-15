@@ -21,6 +21,15 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
         <div className="text-center">
+          {/* Logo */}
+          <div className={`mb-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+            <img 
+              src="/logo.png" 
+              alt="Mid Pacific Cleaning Logo" 
+              className="h-24 w-24 md:h-32 md:w-32 mx-auto drop-shadow-lg"
+            />
+          </div>
+          
           {/* Main Heading */}
           <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
