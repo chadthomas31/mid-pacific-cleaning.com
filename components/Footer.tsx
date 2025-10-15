@@ -60,15 +60,21 @@ export default function Footer() {
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
               © 2024 Mid Pacific Cleaning. All rights reserved.
             </div>
-            <div className="flex space-x-6 text-sm text-gray-400">
+            <div className="flex flex-wrap gap-6 text-sm text-gray-400">
+              <a href="/" className="hover:text-maui-sand transition-colors duration-200">
+                Home
+              </a>
+              <a href="/services" className="hover:text-maui-sand transition-colors duration-200">
+                Services
+              </a>
+              <a href="/quote" className="hover:text-maui-sand transition-colors duration-200">
+                Get Quote
+              </a>
               <a href="#" className="hover:text-maui-sand transition-colors duration-200">
                 Privacy Policy
               </a>
               <a href="#" className="hover:text-maui-sand transition-colors duration-200">
                 Terms of Service
-              </a>
-              <a href="#" className="hover:text-maui-sand transition-colors duration-200">
-                Contact
               </a>
             </div>
           </div>

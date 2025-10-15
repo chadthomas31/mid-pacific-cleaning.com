@@ -1,5 +1,7 @@
 'use client'
 
+import Header from '@/components/Header'
+
 export default function Services() {
   const services = [
     {
@@ -78,7 +80,9 @@ export default function Services() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-maui-blue via-maui-teal to-maui-sunset">
-      {/* Header */}
+      <Header />
+      
+      {/* Page Header */}
       <div className="bg-white/10 backdrop-blur-sm">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="flex items-center justify-center">
@@ -95,6 +99,19 @@ export default function Services() {
                 Professional cleaning solutions by Kate McCluskey & Darci Gonzalves
               </p>
             </div>
+          </div>
+          
+          {/* Back Button */}
+          <div className="text-center mt-6">
+            <a 
+              href="/" 
+              className="inline-flex items-center text-white/90 hover:text-white transition-colors duration-200"
+            >
+              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+              </svg>
+              Back to Home
+            </a>
           </div>
         </div>
       </div>
