@@ -10,6 +10,24 @@ export const metadata: Metadata = {
   description: 'Extraordinary cleaning services in Maui, Hawaii. Professional, reliable, and eco-friendly cleaning solutions for your home and business.',
   keywords: 'cleaning services, Maui, Hawaii, professional cleaning, eco-friendly, residential cleaning, commercial cleaning',
   authors: [{ name: 'Kate McCluskey & Darci Gonzalves' }],
+  manifest: '/manifest.json',
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 5,
+    userScalable: true,
+    viewportFit: 'cover',
+  },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'Mid Pacific Cleaning',
+  },
+  formatDetection: {
+    telephone: true,
+    email: true,
+    address: true,
+  },
   icons: {
     icon: [
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
