@@ -15,7 +15,7 @@ export default function Header() {
             <img 
               src="/logo.png" 
               alt="Mid Pacific Cleaning Logo" 
-              className="h-12 w-12"
+              className="h-16 w-16"
             />
             <span className="text-xl font-bold text-maui-blue">
               Mid-Pacific Cleaning
