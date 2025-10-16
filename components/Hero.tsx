@@ -19,25 +19,24 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16">
         <div className="text-center">
           {/* Logo */}
-          <div className={`mb-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          <div className={`mb-2 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <img 
               src="/logo.png" 
               alt="Mid Pacific Cleaning Logo" 
-              className="h-24 w-24 md:h-32 md:w-32 mx-auto drop-shadow-2xl"
+              className="h-60 w-60 md:h-80 md:w-80 mx-auto drop-shadow-2xl"
             />
           </div>
           
           {/* Main Heading */}
           <div className={`mb-8 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
-              Mid Pacific
-              <span className="block text-maui-sand">Cleaning</span>
+              Mid Pacific Cleaning
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-6 max-w-3xl mx-auto">
-              Extraordinary cleaning services by Kate McCluskey & Darci Gonzalves
+              Extraordinary cleaning services by Darci Gonzalves & Kate McCluskey
             </p>
             <p className="text-lg text-white/80 max-w-2xl mx-auto">
               Serving Maui, Hawaii with professional, eco-friendly cleaning solutions for your home and business
