@@ -14,7 +14,7 @@ const contactMethods = [
   {
     title: 'Email Us',
     description: 'Send us your cleaning needs',
-    details: 'info@midpacificcleaning.com',
+    details: 'katherinetmccluskey@gmail.com',
     action: 'Send Email',
     icon: '✉️',
     color: 'from-blue-500 to-cyan-500'
