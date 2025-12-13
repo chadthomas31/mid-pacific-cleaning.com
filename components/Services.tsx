@@ -136,7 +136,7 @@ export default function Services() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-white text-maui-blue font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors duration-200">
-                Call (808) 555-CLEAN
+                Call 808-495-1620
               </button>
               <button className="border-2 border-white text-white font-semibold py-3 px-8 rounded-lg hover:bg-white hover:text-maui-blue transition-colors duration-200">
                 Email Us

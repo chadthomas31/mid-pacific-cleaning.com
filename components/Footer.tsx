@@ -21,7 +21,7 @@ export default function Footer() {
             </p>
             <div className="space-y-2 text-gray-300">
               <p>📍 Serving all of Maui, Hawaii</p>
-              <p>📞 (808) 555-CLEAN</p>
+              <p>📞 <a href="tel:808-495-1620" className="hover:underline">808-495-1620</a></p>
               <p>✉️ info@midpacificcleaning.com</p>
             </div>
           </div>

@@ -6,7 +6,7 @@ const contactMethods = [
   {
     title: 'Call Us',
     description: 'Speak directly with Kate or Darci',
-    details: '(808) 555-CLEAN',
+    details: '808-495-1620',
     action: 'Call Now',
     icon: '📞',
     color: 'from-green-500 to-emerald-500'
@@ -22,7 +22,7 @@ const contactMethods = [
   {
     title: 'Text Us',
     description: 'Quick questions and scheduling',
-    details: '(808) 555-TEXT',
+    details: '808-495-1620',
     action: 'Send Text',
     icon: '💬',
     color: 'from-purple-500 to-pink-500'
