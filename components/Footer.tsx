@@ -78,6 +78,9 @@ export default function Footer() {
               </a>
             </div>
           </div>
+          <div className="text-gray-500 text-xs text-center mt-6">
+            Site by <a href="https://stackconsultingai.com" target="_blank" rel="noopener" className="hover:text-maui-sand transition-colors duration-200">Stack Consulting AI</a> &middot; AI &amp; automation by <a href="https://strategicsync.com" target="_blank" rel="noopener" className="hover:text-maui-sand transition-colors duration-200">Strategic Sync</a>.
+          </div>
         </div>
       </div>
     </footer>
