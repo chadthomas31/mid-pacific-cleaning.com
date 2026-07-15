@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Script from 'next/script'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -71,7 +72,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        {/* Umami analytics (self-hosted @ analytics.stackconsultingai.com) */}
+        <Script
+          id="umami-analytics"
+          defer
+          src="https://analytics.stackconsultingai.com/script.js"
+          data-website-id="b51c0819-2ee5-4fa0-8abb-6e1cd3636272"
+          strategy="afterInteractive"
+        />
+      </body>
     </html>
   )
 }
